@@ -5,4 +5,6 @@ module com.example.detyra3_siguria_e_te_dhenave {
 
     opens com.example.detyra3_siguria_e_te_dhenave to javafx.fxml;
     exports com.example.detyra3_siguria_e_te_dhenave;
+    exports rsa;
+    opens rsa to javafx.fxml;
 }
