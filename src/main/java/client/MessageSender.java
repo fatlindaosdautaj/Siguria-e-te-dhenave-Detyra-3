@@ -40,14 +40,22 @@ public class MessageSender implements Runnable {
                 }
 
                 String encrypted = RSAUtils.encrypt(message, serverPublicKey);
+
+                // Debug output për testim
+                System.out.println("[DEBUG] Mesazhi origjinal: " + message);
+                System.out.println("[DEBUG] Mesazhi i enkriptuar (Base64): " + encrypted);
+
                 writer.write(encrypted);
                 writer.newLine();
                 writer.flush();
+
+
             }
 
         } catch (Exception e) {
             System.err.println("Gabim gjatë dërgimit të mesazhit: " + e.getMessage());
             e.printStackTrace();
         }
+
     }
 }

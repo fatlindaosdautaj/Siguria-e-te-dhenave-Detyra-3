@@ -41,6 +41,11 @@ public class ClientHandler implements Runnable {
             String encryptedMessage;
             while ((encryptedMessage = input.readLine()) != null) {
                 String decryptedMessage = decryptMessage(encryptedMessage);
+
+                // DEBUG printimet:
+                System.out.println("[DEBUG] Mesazhi i marrë (i enkriptuar): " + encryptedMessage);
+                System.out.println("[DEBUG] Mesazhi i dekriptuar: " + decryptedMessage);
+
                 System.out.println("[Mesazh nga klienti] " + decryptedMessage);
             }
 
