@@ -35,7 +35,6 @@ public class MessageReceiver implements Runnable {
                 System.out.println("\n[Mesazh i pranuar] ➜ " + decrypted);
                 System.out.print("> ");
             }
-
         } catch (SocketException e) {
             System.out.println("Lidhja është mbyllur. Receiver ndaloi.");
         } catch (Exception e) {
