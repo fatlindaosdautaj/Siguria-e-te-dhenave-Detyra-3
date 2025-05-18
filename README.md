@@ -65,6 +65,11 @@ A secure messaging platform that enables encrypted communication between clients
 
 ## 🧾 Example Console Output
 
+![Image](https://github.com/user-attachments/assets/5f36cefd-3e71-4139-a081-2c99a9f3d7e4)
+
+![Image](https://github.com/user-attachments/assets/f7d34586-b432-4102-8441-5a180ac1ec41)
+
+![Image](https://github.com/user-attachments/assets/8078dca6-d6cb-4117-808c-3c3521e8d8a3)
 
 
 
