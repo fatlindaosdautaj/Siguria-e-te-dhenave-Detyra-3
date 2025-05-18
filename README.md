@@ -10,16 +10,16 @@ A secure messaging platform that enables encrypted communication between clients
 - Provide a basic and intuitive user interface.
 
 ## 📋 Requirements
-- Python 3.8+
-- Socket programming knowledge
+- Java 17 or newer
+- IntelliJ IDEA or another Java-compatible IDE
 - Basic understanding of RSA encryption
-- Terminal/console for running client and server
+- Terminal or console for running the client and server
 
 ## ⚙️ Technical Stack
-- **Language:** Python
-- **Encryption:** RSA (PyCryptodome or manual implementation)
-- **Networking:** Python Sockets
-- **Interface:** Console-based UI
+- **Language:** Java
+- **Encryption:** RSA using `java.security`
+- **Networking:** Java Sockets (TCP)
+- **Interface:** Console-based user interface
 
 ## 🔐 RSA Key Pair Generation
 - Each client generates its own public and private RSA key pair upon initialization.
@@ -53,11 +53,15 @@ A secure messaging platform that enables encrypted communication between clients
 - Displays incoming messages in real-time.
 
 ## 📦 Deliverables
-- `server.py` – server-side implementation.
-- `client.py` – client-side implementation.
-- `README.md` – project documentation.
-- Example key generation and encryption code.
-- Sample test data or usage guide.
+- `client/MainClient.java` – client-side entry point
+- `client/MessageSender.java` – handles user input and encryption
+- `client/MessageReceiver.java` – listens for incoming messages and decrypts
+- `server/MainServer.java` – server entry point
+- `server/ClientHandler.java` – per-client thread manager
+- `rsa/RSAUtils.java` – RSA key generation, encryption, and decryption
+- `rsa/KeyExchange.java` – public key management
+- `tests/RSATests.java` – standalone test of RSA encryption logic
+- `README.md` – this documentation
 
 ## 🧾 Example Console Output
 
@@ -71,3 +75,8 @@ A secure messaging platform that enables encrypted communication between clients
 - Code clarity and documentation.
 - Security and key handling best practices.
 
+## 👥 Contributors
+- Fatlinda Osdautaj
+- Fioni Islami
+- Festim Gashi
+- Fatos Rama
